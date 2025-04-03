@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Musician Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Discover Great Music</h1>
+        <p>Select your favorite musician to see their top 3 songs:</p>
+        
+        <div class="artist-selection">
+            <select id="artist-select">
+                <option value="">-- Choose an artist --</option>
+                <option value="beyonce">Beyoncé</option>
+                <option value="radiohead">Radiohead</option>
+                <option value="dolly">Dolly Parton</option>
+                <option value="kendrick">Kendrick Lamar</option>
+                <option value="adele">Adele</option>
+            </select>
+            <button id="show-songs">Show Songs</button>
+        </div>
+        
+        <div id="results" class="hidden">
+            <h2 id="artist-name"></h2>
+            <ul id="song-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
